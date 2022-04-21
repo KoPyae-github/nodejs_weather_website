@@ -1,4 +1,3 @@
-console.log("Client side java script file is loaded!");
 
 // let urlShan = "https://v3.shankoemee.com/v3/8packagepromo/getPackageStatus?token=4904047245-f1831c18-fd9b-494d-81be-7b0d9002d1f7&userId=4904047245";
 // let urlPuzzle = "https://puzzle.mead.io/puzzle"
