@@ -15,7 +15,8 @@ const forecast = (q1, q2, unit, callback) => {
         } else {
             callback(undefined, {
                 temperature: body.current.temperature,
-                feelslike: body.current.feelslike
+                feelslike: body.current.feelslike,
+                humidity: body.current.humidity,
             });
         }
     });

@@ -75,14 +75,14 @@ geoFunction = (address, unit, res) => {
             return res.send({ err });
         }
 
-        forecast(latitude, longtitude, unit, (err, { temperature, feelslike }) => {
+        forecast(latitude, longtitude, unit, (err, { temperature, feelslike, humidity }) => {
             if (err) {
                 return res.send({ err });
             }
 
             res.send({
                 coordinateMessage: `The Coordinates of ${location} are ${latitude}, ${longtitude}.`,
-                forecastMessage: `It is currently ${temperature} degrees out. It feels like ${feelslike} degrees out.`,
+                forecastMessage: `It is currently ${temperature} degrees out. It feels like ${feelslike} degrees out. Humidity is ${humidity} %`,
                 location,
                 address,
             })
