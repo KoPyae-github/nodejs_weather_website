@@ -30,7 +30,7 @@
 // });
 
 let generateForecast = (address) => {
-    let urlLH = "http://localhost:3000/weather?address=" + address;
+    let urlLH = "/weather?address=" + address;
     fetch(urlLH).then((response) => {
         response.json().then((data) => {
             if (data.err) {
